@@ -8,7 +8,7 @@ public class UserRating {
     public UserRating() {
 
     }
-    public UserRating(List<Rating> ratings) {
+   public UserRating(List<Rating> ratings) {
         this.ratings = ratings;
     }
 

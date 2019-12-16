@@ -2,8 +2,8 @@ package com.thoughtworks.moviecatalogservice.models;
 
 public class Movie {
 
-    private String title;
     private int id;
+    private String title;
     private String description;
 
     public Movie() {

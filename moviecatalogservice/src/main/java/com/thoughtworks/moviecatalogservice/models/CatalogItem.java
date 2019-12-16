@@ -1,37 +1,25 @@
 package com.thoughtworks.moviecatalogservice.models;
 
 public class CatalogItem {
-    private String name;
-    private String desc;
-    private int rating;
+    private int userId;
+    private final Movie movie;
+    private final Rating rating;
 
-    public CatalogItem(String name, String desc, int rating) {
-        this.name = name;
-        this.desc = desc;
+    public CatalogItem(int userId, Movie movie, Rating rating) {
+        this.userId = userId;
+        this.movie = movie;
         this.rating = rating;
     }
 
-    public String getName() {
-        return name;
+    public int getUserId() {
+        return userId;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public Movie getMovie() {
+        return movie;
     }
 
-    public String getDesc() {
-        return desc;
-    }
-
-    public void setDesc(String desc) {
-        this.desc = desc;
-    }
-
-    public int getRating() {
+    public Rating getRating() {
         return rating;
-    }
-
-    public void setRating(int rating) {
-        this.rating = rating;
     }
 }
