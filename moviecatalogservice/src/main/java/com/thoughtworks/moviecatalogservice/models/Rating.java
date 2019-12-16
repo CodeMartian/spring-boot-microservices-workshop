@@ -1,16 +1,19 @@
 package com.thoughtworks.moviecatalogservice.models;
 
 public class Rating {
-    private final int rating;
-    private final int movieId;
+    private int rating;
+    private String movieTitle;
 
-    public Rating(int movieId, int rating) {
-        this.movieId = movieId;
+    public Rating() {
+
+    }
+    public Rating(String movieTitle, int rating) {
+        this.movieTitle = movieTitle;
         this.rating = rating;
     }
 
-    public int getMovieId() {
-        return movieId;
+    public String getMovieTitle() {
+        return movieTitle;
     }
 
     public int getRating() {

@@ -2,15 +2,15 @@ package com.thoughtworks.ratingsdataservice.models;
 
 public class Rating {
     private final int rating;
-    private final String movieId;
+    private final String movieTitle;
 
-    public Rating(String movieId, int rating) {
-        this.movieId = movieId;
+    public Rating(String movieTitle, int rating) {
+        this.movieTitle = movieTitle;
         this.rating = rating;
     }
 
-    public String getMovieId() {
-        return movieId;
+    public String getmovieTitle() {
+        return movieTitle;
     }
 
     public int getRating() {
